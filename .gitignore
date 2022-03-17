@@ -1,0 +1,9 @@
+*.m
+*.dat
+*.o
+*.mod
+diet
+COST_PER_STEP.TXT
+SUMMARY.WRK
+.*~
+*~

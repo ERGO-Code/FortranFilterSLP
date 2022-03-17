@@ -1,8 +1,9 @@
 EMSOL_HOME =  /home/jajhall/EMSOL
 
-FORTRAN   = /usr/bin/f77
-LLKOPT     = -L$(EMSOL_HOME)/lib -lEMSOL -static-libcxa
-LINC       = -I$(EMSOL_HOME)/install/source -I$(EMSOL_HOME)/inc
+FORTRAN   = /usr/bin/f95
+LLKOPT     = -L$(EMSOL_HOME)/lib -lEMSOL
+#-static-libcxa
+LINC       = -I$(EMSOL_HOME)
 
 OBJ= interface.o common_types.o nonlin.o\
      slpdrive.o rdprobdi.o diet_drv.o register.o rd_prob_da.o\
@@ -21,7 +22,7 @@ INC = msg.inc\
 OUT=diet
 
 #FFLAGS = -w -check bounds -check arg_temp_created -traceback -fpstkchk -heap-arrays -fpe0 -g
-FFLAGS = -w -g
+FFLAGS = -w -g -fno-range-check 
 #FFLAGS = -w -g -d5 -CA -CB -CS -quiet 
 #FFLAGS = -O
 

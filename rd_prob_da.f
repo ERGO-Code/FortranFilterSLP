@@ -221,12 +221,12 @@ c        .. this here works: if there is only one record: err = -1
 c           if there are two records then err = 0
          if (err.eq.0.and.DAT%price2(i).lt.500000) then
 c         if (err.eq.0) then
-            if (DAT%is_piecewise_price(i) /= .true.) then
+            if (DAT%is_piecewise_price(i) .neqv. .true.) then
                print *,'previously identified as needing PWL'
                stop
             end if
          else
-            if (DAT%is_piecewise_price(i) /= .false.) then
+            if (DAT%is_piecewise_price(i) .neqv. .false.) then
                print *,'previously identified as not needing PWL'
                stop
             end if
