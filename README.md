@@ -4,7 +4,7 @@ FORTRAN implementation of FilterSLP
 `original`
 ---------
 
-This is version dates from (probably many years before) 4 July 2013. 
+This version dates from (at the latest) 4 July 2013. 
 * It won't compile with modern `f90` (specifically `gcc version 9.4.0 - Ubuntu 9.4.0-1ubuntu1~20.04`) due to some FORTRAN usage that's now illegal.
 
 Specifically, two logical statements `/=` in lines 224 and 229 of `rd_prob_da.f` can no longer be compiled
