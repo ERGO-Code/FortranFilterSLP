@@ -1,5 +1,6 @@
 # FortranFilterSLP
-FORTRAN implementation of FilterSLP
+
+For a particular class of non-convex nonlinear programming problems, this FORTRAN implementation of FilterSLP uses sequential linear programming to find a (local) optimal solution.
 
 `original`
 ---------
